@@ -1,0 +1,6 @@
+{
+  "name": "Veo Studio - AI Video Generator",
+  "description": "Generate cinematic, high-definition videos from text prompts using Google Veo 3 fast preview model with custom aspect ratios, styles, and prompt engineering tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

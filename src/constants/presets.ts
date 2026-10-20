@@ -1,0 +1,137 @@
+import { PromptTemplate } from '../types';
+
+export const PROMPT_TEMPLATES: PromptTemplate[] = [
+  {
+    id: 'cyberpunk-tokyo',
+    title: 'Cyberpunk Tokyo Drift',
+    prompt: 'Cinematic slow-motion pan of a modified retro-futuristic sports car drifting through neon-lit rainy Tokyo alleyways, water splashing against glossy asphalt, holographic advertisements reflecting in puddle mirrors, 35mm lens, moody atmospheric fog, 4k crisp detail.',
+    category: 'Sci-Fi',
+    recommendedAspectRatio: '16:9',
+    style: 'Cinematic Film',
+    camera: 'Cinematic Slow Pan',
+  },
+  {
+    id: 'aurora-fjords',
+    title: 'Aurora Borealis Fjords',
+    prompt: 'Breathtaking drone flyover above snow-covered Norwegian fjords at midnight, vivid emerald and violet aurora borealis dancing across starry polar skies, calm glassy water reflecting arctic mountains, high dynamic range.',
+    category: 'Nature',
+    recommendedAspectRatio: '16:9',
+    style: 'Drone & Aerial',
+    camera: 'Dynamic Drone Flythrough',
+  },
+  {
+    id: 'bioluminescent-ocean',
+    title: 'Deep Abyss Bioluminescence',
+    prompt: 'Vertical macro tracking shot following a translucent bioluminescent jellyfish pulsating with glowing cyan and electric purple light through the pitch-black deep ocean, floating micro-particles shimmering in underwater current.',
+    category: 'Atmospheric',
+    recommendedAspectRatio: '9:16',
+    style: 'Bioluminescent',
+    camera: 'Macro Tracking',
+  },
+  {
+    id: 'retro-synthwave-runner',
+    title: 'Synthwave Highway Run',
+    prompt: 'Vertical portrait view of a futuristic runner sprinting down an endless retro grid highway towards a giant wireframe magenta sun on the horizon, laser light trails trailing their footsteps, synthwave vaporwave aesthetic.',
+    category: 'Sci-Fi',
+    recommendedAspectRatio: '9:16',
+    style: 'Retro VHS Synthwave',
+    camera: 'Low Angle Tracking',
+  },
+  {
+    id: 'desert-falcon',
+    title: 'Golden Dune Falcon Dive',
+    prompt: 'Epic high-speed tracking shot following a golden desert falcon swooping low over rippling sand dunes in the Sahara desert during dramatic golden hour sunset, sand grains kicking up, warm amber sun flare.',
+    category: 'Action',
+    recommendedAspectRatio: '16:9',
+    style: 'Photorealistic',
+    camera: 'High-Speed Tracking',
+  },
+  {
+    id: 'cloud-city-islands',
+    title: 'Floating Sky Haven',
+    prompt: 'Magical studio ghibli-inspired painterly animation of a floating green island citadel suspended among towering cumulus clouds, ancient watermills turning in gentle breeze, colorful flock of birds taking flight, warm sunlight.',
+    category: 'Animation',
+    recommendedAspectRatio: '16:9',
+    style: 'Anime Concept Art',
+    camera: 'Slow Orbital Pan',
+  },
+  {
+    id: 'fashion-editorial-walk',
+    title: 'High-Fashion Rain Walk',
+    prompt: 'Vertical fashion runway video of an avant-garde model wearing an iridescent chrome trench coat walking confidently down a misty Paris boulevard at dusk, raindrops hitting umbrellas, streetlights casting golden bokeh halos, Vogue editorial aesthetic.',
+    category: 'Cinematic',
+    recommendedAspectRatio: '9:16',
+    style: 'Fashion Editorial',
+    camera: 'Full Body Portrait Pan',
+  },
+  {
+    id: 'space-station-sunrise',
+    title: 'Orbital Earth Sunrise',
+    prompt: 'Hyper-realistic view from the cupola window of an orbital space station looking down as bright golden sunrise creeps across Earth curvature, clouds casting long shadows across blue oceans, solar panels slowly reorienting.',
+    category: 'Sci-Fi',
+    recommendedAspectRatio: '16:9',
+    style: 'Hyper-Realistic',
+    camera: 'Static Tripod Shot',
+  },
+  {
+    id: 'forest-dewdrop-macro',
+    title: 'Dewdrop Miniature World',
+    prompt: 'Extreme close-up macro lens video inside a lush emerald moss forest, a single clear dewdrop reflecting the canopy above, gentle breeze trembling the clover leaf, soft morning bokeh sunbeams.',
+    category: 'Nature',
+    recommendedAspectRatio: '9:16',
+    style: 'Macro Wildlife',
+    camera: 'Extreme Macro Focus Pull',
+  },
+  {
+    id: 'steampunk-locomotive',
+    title: 'Steampunk Iron Colossus',
+    prompt: 'Dramatic low-angle cinematic shot of a massive brass and steel steampunk locomotive plowing through heavy snow in the Rocky Mountains, thick steam billowing from smokestacks, glowing furnace fire visible through iron grates.',
+    category: 'Action',
+    recommendedAspectRatio: '16:9',
+    style: 'Cinematic Film',
+    camera: 'Low-Angle Tracking',
+  },
+];
+
+export const STYLE_OPTIONS = [
+  { id: 'cinematic', label: 'Cinematic Film', tag: 'cinematic 35mm film grain, anamorphic lens, Arri Alexa color grade' },
+  { id: 'photorealistic', label: 'Photorealistic', tag: 'photorealistic 8k, pristine realistic textures, natural lighting' },
+  { id: 'cyberpunk', label: 'Cyberpunk / Sci-Fi', tag: 'cyberpunk neon glow, volumetric fog, holographic reflections' },
+  { id: 'anime', label: 'Anime Concept Art', tag: 'vibrant anime aesthetic, Makoto Shinkai style, painterly lighting' },
+  { id: 'drone', label: 'Drone & Aerial', tag: 'sweeping cinematic drone perspective, wide establishing shot' },
+  { id: 'macro', label: 'Macro & Close-up', tag: 'extreme macro lens, shallow depth of field, delicate details' },
+  { id: 'vintage', label: 'Vintage 80s VHS', tag: '1980s retro film look, subtle analog noise, warm vintage hues' },
+  { id: 'fantasy', label: 'Mythic Fantasy', tag: 'ethereal fantasy lighting, glowing particles, magical ambience' },
+];
+
+export const CAMERA_OPTIONS = [
+  { id: 'pan', label: 'Cinematic Pan', tag: 'smooth cinematic horizontal camera pan' },
+  { id: 'zoom-in', label: 'Slow Zoom In', tag: 'slow deliberate push-in zoom towards subject' },
+  { id: 'zoom-out', label: 'Slow Zoom Out', tag: 'gradual pull-back zoom revealing vast surroundings' },
+  { id: 'drone', label: 'FPV Drone Flight', tag: 'dynamic sweeping drone flight path' },
+  { id: 'orbital', label: '360° Orbital', tag: 'smooth orbital camera arc rotating around subject' },
+  { id: 'tracking', label: 'Dynamic Tracking', tag: 'high-speed follow tracking shot with motion blur' },
+  { id: 'static', label: 'Static Lock-Off', tag: 'locked-off stationary tripod composition' },
+  { id: 'handheld', label: 'Handheld Cinema', tag: 'subtle organic handheld camera movement' },
+];
+
+export const LIGHTING_OPTIONS = [
+  { id: 'golden-hour', label: 'Golden Hour Sunset', tag: 'warm golden hour sunlight, long dramatic shadows, lens flare' },
+  { id: 'neon-night', label: 'Neon Cyberpunk', tag: 'vibrant neon pink and cyan lights piercing dark shadows' },
+  { id: 'moody-fog', label: 'Moody Atmospheric Fog', tag: 'diffused soft mist, moody overcast ambiance, soft backlight' },
+  { id: 'studio', label: 'Clean Studio Light', tag: 'professional high-key studio softbox lighting, crisp highlights' },
+  { id: 'bioluminescent', label: 'Bioluminescent Glow', tag: 'ethereal self-luminous glow against deep darkness' },
+  { id: 'dramatic-noir', label: 'High Contrast Noir', tag: 'stark chiaroscuro shadows, high-contrast monochrome tones' },
+];
+
+export const REASSURING_MESSAGES = [
+  'Initializing Google Veo 3 engine...',
+  'Interpreting text prompt and spatial composition...',
+  'Synthesizing latent video tokens and temporal dynamics...',
+  'Simulating camera movement and optical depth of field...',
+  'Rendering fluid physics and photorealistic lighting...',
+  'Refining frame-to-frame temporal coherence...',
+  'Applying cinematic color correction and contrast curve...',
+  'Encoding high-definition MP4 video stream...',
+  'Finalizing stream delivery...',
+];
